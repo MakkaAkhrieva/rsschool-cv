@@ -21,6 +21,7 @@
 - C/C++
 - OOP  
 - HTML/CSS
+- JS
 - Manual testing 
 - English(B1)  
 ## Personal qualities  
