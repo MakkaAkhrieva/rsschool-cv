@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Makka Akhrieva</title>
     <script src="https://kit.fontawesome.com/d474f2374e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <div class="center">
     <div class="container">
         <div class="main">
             <!--Left Section-->
-            <div class="left">
+            <aside class="left">
                 <div class="profile-pic">
-                 <img src="photo_2021-03-08_21-00-46.jpg" alt="photo">
+                 <img src="img/photo_2021-03-08_21-00-46.jpg" alt="photo">
                 </div>
             
                  <div class="section-container">
-                    <div class="contact-details">
-                        <div class="head">Contacts</div>
-                        <div class="contact">
+                    <section class="contact-details">
+                        <h5 class="head">Contacts</h5>
+                       <ul>
+                        <li class="li"><div class="contact">
                             
                             <div class="label">
                                 
@@ -30,39 +31,41 @@
                             <div class="value">
                                 +375295101777
                             </div>
-                        </div>
+                        </div></li>
 
-                        <div class="contact">
+                        <li class="li"><div class="contact">
                             <div class="label">
                                 <i class="fas fa-at"></i>
                             </div>
                             <div class="value">
                                 <a href="makka.akhrieva00@mail.ru">makka.akhrieva00@mail.ru</a>
                             </div>
+                        </div></li>
+                     <li class="li">   <div class="contact">
+                        <div class="label">
+                            <i class="fab fa-github"></i>
                         </div>
-                        <div class="contact">
-                            <div class="label">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="value">
-                                <a href="https://github.com/MakkaAkhrieva">@MakkaAkhrieva</a>
-                            </div>
+                        <div class="value">
+                            <a href="https://github.com/MakkaAkhrieva">@MakkaAkhrieva</a>
                         </div>
-                        <div class="contact">
+                    </div></li>
+                        <li class="li"><address class="contact">
                             <div class="label">
                                 <i class="fas fa-map-marked-alt"></i>
                             </div>
                             <div class="value">
                                 4b Skryganova,apt 338, Minsk,Belarus
                             </div>
-                        </div>
+                        </address></li>
                        
-                    </div>
+                       </ul>
+                        
+                    </section>
 
                     <!-- Skills Section -->
 
-                    <div class="section-container">
-                        <div class="head">Skills</div>
+                    <section class="section-container">
+                        <h5 class="head">Skills</h5>
                         <div class="skills">
                             
                             <div class="skill">
@@ -115,12 +118,12 @@
                             </div>
                             
                         </div>
-                    </div>
+                    </section>
 
                     <!-- Languages -->
 
-                    <div class="section-container">
-                        <div class="head">Languages</div>
+                    <section class="section-container">
+                        <h5 class="head">Languages</h5>
                         <div class="languages">
                            
                             <div class="language">
@@ -134,24 +137,24 @@
                                 <div class="square white"></div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
                    
 
                 </div>
 
-            </div>
+            </aside>
 
             <!--Right Section-->
             <div class="right">
                 <header class="top">
                     <div class="profile-info">
-                        <div class="name">
+                        <h1 class="name">
                             Makka Akhrieva
-                        </div>
-                        <div class="title">
+                        </h1>
+                        <h3 class="title">
                             Front-end Developer
-                        </div>
+                        </h3>
                     </div>
                 </header>
 
@@ -159,10 +162,10 @@
 
                     <!--Personal qualities -->
 
-                    <div class="about-me section">
-                        <div class="section-head">
+                    <section class="about-me section">
+                        <h5 class="section-head">
                             Personal qualities
-                        </div>
+                        </h5>
                         <div class="desc">
                             <ul>
                                 <li>Dependable</li>
@@ -171,32 +174,70 @@
                                 <li>Versatile</li>
                             </ul>
                         </div>
-                    </div>
+                    </section>
 
                     <!-- Education -->
 
-                    <div class="education section">
-                        <div class="section-head">
+                    <section class="education section">
+                        <h5 class="section-head">
                             Education
-                        </div>
+                        </h5>
                         <p class="detail1">University:<span class="detail2">Belarasian State University of Information and Radioelectronics</span></p>
                         <p class="detail1">Speciality:<span class="detail2">Information Systems and Technologies (in economics)</span></p>
                         <p class="detail1">Graduation year:<span class="detail2">2023</span></p>
-                    </div>
+                    </section>
 
                    <!-- Working experience -->
 
-                    <div class="experience section">
-                        <div class="section-head">
+                    <section class="experience section">
+                        <h5 class="section-head">
                             Working experience
-                        </div>
+                        </h5>
                         <ul>
                             <li>First course in Belarussian State University of Informatics and Radio electronics</li>
                             <li>CCNA Introduction to Networks</li>
                             <li>Course in Software testing in IQ LAB</li>
                             
                         </ul>
-                    </div>
+                    </section>
+                    <!--Code example-->
+                    <section class="code example">
+                        <h5 class="section-head">
+                            Code example
+                        </h5>
+                        <pre>void Admin::file_read_check(Admin& admin)
+                            {
+                              string name = "admin.txt";
+                              fstream file_name;
+                              file_name.open(name);
+                              if (!file_name.is_open())
+                              {
+                                cout << "Ошибка открытия файла!" << endl;
+                              }
+                              else
+                                if (file_name.is_open())
+                                {
+                                  admin.login = '\0';
+                                  file_name >> admin.login;
+                            
+                                  admin.parol = '\0';
+                                  file_name >> admin.parol;
+                            
+                                  if (admin.buff_login == admin.login && admin.buff_parol == admin.parol)
+                                  {
+                                    cout << "\nАвторизация прошла успешно!\n";
+                                    admin_menu();
+                            
+                                  }
+                                  if (admin.buff_login != admin.login || admin.buff_parol != admin.parol)
+                                  {
+                                    cout << "\nНеверные данны!" << "Повторите, пожалуйтса, попытку!" << endl;
+                                    main_menu();
+                                  }
+                                }
+                              file_name.close();
+                            }</pre>
+                    </section>
                    
                     
 
