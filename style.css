@@ -157,11 +157,12 @@ body{
 
 .profile-info .title{
     font-size: 28px;
+    font-weight: 400;
     color: #fff
 }
 
 .content{
-    padding: 20px;
+    padding: 15px;
 }
 
 .section{
@@ -260,4 +261,10 @@ img{
 
     padding: 10px;
     
+  }
+  .li{
+      color:#33a2fd;
+  }
+  pre{
+      font-size: 10px;
   }
